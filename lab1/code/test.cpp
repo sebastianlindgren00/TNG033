@@ -65,8 +65,9 @@ int main() {
         // Test
         std::ostringstream os{};
         os << S1 << " " << S2;
-
         std::string tmp{os.str()};
+        std::cout << tmp << std::endl;
+        std::cout << S1 << S2 << "Halloj" << std::endl;
         assert((tmp == std::string{"{ 1 3 5 } { 3 4 15 20 }"}));
     }
 
