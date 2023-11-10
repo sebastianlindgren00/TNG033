@@ -100,7 +100,7 @@ bool Set::member(int x) const {
 // Return true, if *this is a subset of Set b
 // Otherwise, false is returned
 bool Set::is_subset(const Set& b) const {
-    
+
     Node* ptr = head->next;
     Node* ptr2 = b.head->next;
 
@@ -124,47 +124,80 @@ bool Set::is_subset(const Set& b) const {
 // Repeated values are not allowed
 // Implement an algorithm similar to the one in exercise 3/Set 1, but don't use vectors
 Set Set::set_union(const Set& b) const {
-    Node* ptr = head->next; // *this
-    Node* ptr2 = b.head->next; // b
-    Set S3{}; // new set
+    Node* ptr = head->next;
+    Node* ptr2 = b.head->next;
+    Set S3; // new set
 
-    while(ptr != nullptr && ptr2 != nullptr) {
+    while (ptr != nullptr && ptr2 != nullptr) {
         if (ptr->value < ptr2->value) {
             S3.insert(ptr->value);
             ptr = ptr->next;
-        } else if (ptr->value == ptr2->value) {
+        } else if  (ptr->value > ptr2->value) {
+            S3.insert(ptr2->value);
+            ptr2 = ptr2->next;
+
+        } else  {                           // equal
             S3.insert(ptr->value);
             ptr = ptr->next;
             ptr2 = ptr2->next;
-        } else {
-            S3.insert(ptr2->value);
-            ptr2 = ptr2->next;
         }
     }
-    if (ptr == nullptr) {
-        while(ptr2 != nullptr) {
-            S3.insert(ptr2->value);
-            ptr2 = ptr2->next;
-        }
-    } else {
-        while(ptr != nullptr) {
-            S3.insert(ptr->value);
-            ptr = ptr->next;
-        }
+    // If they are different lengths, we need to add the rest of the values to the set.
+    while (ptr != nullptr) {
+        S3.insert(ptr->value);
+        ptr = ptr->next;
     }
+
+    while (ptr2 != nullptr) {
+        S3.insert(ptr2->value);
+        ptr2 = ptr2->next;
+    }
+
     return S3;
 }
 
 // Return a new Set representing the intersection of Sets *this and b
 Set Set::set_intersection(const Set& b) const {
-    // ADD CODE
-    return Set{};  // delete, if needed
+    //Here we can utilize the member function created above. Therefore, we don't step through b, but rather check if the value is a member of b.
+    Node* ptr = head->next;
+    Set S3; // new set
+
+    while (ptr != nullptr) {
+        if (b.member(ptr->value)) {
+            S3.insert(ptr->value);
+        }
+        ptr = ptr->next;
+    }
+
+    return S3;
 }
 
 // Return a new Set representing the difference between Set *this and Set b
 Set Set::set_difference(const Set& b) const {
-    // ADD CODE
-    return Set{};  // delete, if needed
+
+    Node* ptr = head->next;
+    Node* ptr2 = b.head->next;
+    Set S3; // new set
+
+    while (ptr != nullptr && ptr2 != nullptr) {
+        if (ptr->value < ptr2->value) {
+            S3.insert(ptr->value);
+            ptr = ptr->next;
+        } else if  (ptr->value > ptr2->value) {
+            ptr2 = ptr2->next;
+
+        } else  {                           // equal
+            ptr = ptr->next;
+            ptr2 = ptr2->next;
+        }
+    }
+    // If they are different lengths, we need to add the rest of the values to the set.
+    while (ptr != nullptr) {
+        S3.insert(ptr->value);
+        ptr = ptr->next;
+    }
+
+    return S3;
 }
 
 std::ostream& operator<<(std::ostream& os, const Set& rhs) {
@@ -187,12 +220,22 @@ std::ostream& operator<<(std::ostream& os, const Set& rhs) {
 
 void Set::insert(int x) {
     Node* ptr = head->next;
+    Node* prev = head;
     while(ptr != nullptr && ptr->value < x) {
+        prev = ptr;
         ptr = ptr->next;
     }
     if (ptr == nullptr || ptr->value != x) {
-        Node* tmp = new Node(x, ptr);
-        head->next = tmp;
+        Node* newN = new Node(x, ptr);
+        prev->next = newN;
+        ++counter;
+    }
+}
+//Inserts a new node with value x after the node pointed to by ptr.
+void Set::insert(int x, Node* ptr) {
+    if (ptr == nullptr || ptr->value != x) {
+        Node* newN = new Node(x, ptr);
+        head->next = newN;
         ++counter;
     }
 }
