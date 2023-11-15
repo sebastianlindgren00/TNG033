@@ -5,5 +5,5 @@
 
 #include "logarithm.h"
 #include "polynomial.h"
-#include <cmath>
 
+// ADD implementation of the member functions for class Logarithm

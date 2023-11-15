@@ -6,10 +6,9 @@
 #pragma once
 
 #include <iostream>
-#include <vector>
 
 #include "expression.h"
 
 class Logarithm : public Expression {
-
+    // ADD CODE
 };
