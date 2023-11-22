@@ -30,6 +30,8 @@ Set::Set(int x) : Set() {
 
 // Constructor: create a set with elements
 // elements is not sorted and values in it may not be unique
+
+//sort is done in the insert function
 Set::Set(const std::vector<int>& elements) : Set() {
     for (int x : elements)
         insert(x);
@@ -44,9 +46,8 @@ Set::Set(const Set& rhs) : Set() {
         ptr->next = new Node{ptr2->value, nullptr};
         ptr = ptr->next;
         ptr2 = ptr2->next;
+        counter++;
     }
-    counter = rhs.counter;
-
 }
 
 // Assignment operator: use copy-and-swap idiom
@@ -60,13 +61,7 @@ Set& Set::operator=(Set rhs) {
 // Destructor: deallocate all nodes
 Set::~Set() {
     Node* ptr = head;
-    // We work with a temporary pointer to stay on the safe side.
-    while(ptr != nullptr) {
-        Node* tmp = ptr;
-        ptr = ptr->next;
-        delete tmp;
-    }
-    counter = 0;
+    remove (ptr);
 }
 
 // Return number of elements in the set
@@ -137,7 +132,7 @@ Set Set::set_union(const Set& b) const {
             ptr2 = ptr2->next;
 
         } else  {                           // equal
-            S3.insert(ptr->value);
+            S3.insert(ptr->value);          // need only one of the values since equal
             ptr = ptr->next;
             ptr2 = ptr2->next;
         }
@@ -178,12 +173,12 @@ Set Set::set_difference(const Set& b) const {
     Node* ptr = head->next;
     Node* ptr2 = b.head->next;
     Set S3; // new set
-
+    // Step through
     while (ptr != nullptr && ptr2 != nullptr) {
-        if (ptr->value < ptr2->value) {
+        if (ptr->value < ptr2->value) { // they differ
             S3.insert(ptr->value);
             ptr = ptr->next;
-        } else if  (ptr->value > ptr2->value) {
+        } else if  (ptr->value > ptr2->value) { //they differ
             ptr2 = ptr2->next;
 
         } else  {                           // equal
@@ -231,11 +226,12 @@ void Set::insert(int x) {
         ++counter;
     }
 }
-//Inserts a new node with value x after the node pointed to by ptr.
-void Set::insert(int x, Node* ptr) {
-    if (ptr == nullptr || ptr->value != x) {
-        Node* newN = new Node(x, ptr);
-        head->next = newN;
-        ++counter;
+void Set::remove(Node* ptr) {
+    // We work with a temporary pointer to stay on the safe side.
+    while(ptr != nullptr) {
+        Node* tmp = ptr;
+        ptr = ptr->next;
+        delete tmp;
+        counter--;
     }
 }

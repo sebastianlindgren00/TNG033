@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.26"
+						"string" : "3.13.0"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "lab2",
+					"name" : "TNG033-Lab-2",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "lab2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab2-Debug-664ef75bbcc629aaffc1.json",
-					"name" : "lab2",
+					"id" : "Exercise1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Exercise1-Debug-a79e63fd1769e9498a10.json",
+					"name" : "Exercise1",
 					"projectIndex" : 0
 				}
 			]
@@ -55,6 +55,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 6
 	}
 }

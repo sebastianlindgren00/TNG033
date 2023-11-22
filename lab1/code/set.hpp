@@ -84,4 +84,6 @@ private:
     void insert(int x);
 
     void insert(int x, Node *ptr);
+
+    void remove(Node* ptr);
 };

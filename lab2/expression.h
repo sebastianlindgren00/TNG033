@@ -17,6 +17,19 @@ public:
     }
 
     // ADD OTHER MEMBER FUNCTIONS
+    bool isRoot(double x) const;
+    // Conversion operator
+    // Convert an Expression to a string, explicit to not allow implicit conversion
+    virtual explicit operator std::string() const = 0;
+    // An overloaded function call operator() to evaluate Expression E at x
+    virtual double operator()(double d) const = 0;
+
+    //stream insertion operator<<
+    friend std::ostream& operator<<(std::ostream& os, const Expression& E) {
+        return os << std::string(E);
+    }
+    // Clone function, returns a pointer to a copy of the Expression. nodiscard was clang alert.
+    virtual Expression* clone() const = 0;
 
     // Return number of existing instances of class Expression
     // Used only for debug purposes

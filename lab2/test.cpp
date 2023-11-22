@@ -10,6 +10,13 @@
 #include "polynomial.h"
 #include "logarithm.h"
 
+// Some useful theory
+// * Overloaded operator - Giving special meaning to an operator.
+// For example, the operator + is used to add two numbers,
+// but it can also be used to concatenate two strings.
+
+// * Virtual inheritance - Solving problem of classes that inherit from more than one class.
+
 int main() {
     /*****************************************************
      * TEST PHASE 0                                       *
