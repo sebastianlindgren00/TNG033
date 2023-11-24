@@ -28,7 +28,7 @@ public:
     friend std::ostream& operator<<(std::ostream& os, const Expression& E) {
         return os << std::string(E);
     }
-    // Clone function, returns a pointer to a copy of the Expression. nodiscard was clang alert.
+    // Clone function, returns a pointer to a copy of the Expression.
     virtual Expression* clone() const = 0;
 
     // Return number of existing instances of class Expression

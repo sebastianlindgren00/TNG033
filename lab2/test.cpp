@@ -6,6 +6,7 @@
 #include <iostream>
 #include <vector>
 #include <cassert>
+#include "fmt-master/include/fmt/core.h"
 
 #include "polynomial.h"
 #include "logarithm.h"
@@ -161,7 +162,8 @@ int main() {
         const Polynomial p2{v2};  // create a polynomial of degree 3
 
         // Test
-        assert(std::format("{:.2f}", p2(3.3)) == "218.19");
+        assert(fmt::format("{:.2f}", p2(3.3)) == "218.19");
+
     }
 
     assert(Expression::get_count_expressions() == 0);
