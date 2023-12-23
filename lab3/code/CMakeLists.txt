@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.13.0...3.28)
-project(TNG033-Lab-2 VERSION 1.0.0 DESCRIPTION "TNG033 Lab 2" LANGUAGES CXX)
-set(CMAKE_CXX_STANDARD 20)
+cmake_minimum_required(VERSION 3.13.0...3.28.8)
+project(TNG033-Lab-3 VERSION 1.0.0 DESCRIPTION "TNG033 Lab 3" LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20")
+
 function(enable_warnings target)
     target_compile_options(${target} PUBLIC 
         $<$<CXX_COMPILER_ID:MSVC>:
@@ -11,7 +11,7 @@ function(enable_warnings target)
             /w44388             # eneble 'signed/unsigned mismatch' '(off by default)
             /we4715             # turn 'not all control paths return a value' into a compile error
             /permissive-        # Stick to the standard
-			/fsanitize=address  # Enable the Address Sanatizer, helps finding bugs at runtime
+			#/fsanitize=address  # Enable the Address Sanatizer, helps finding bugs at runtime
             >
         $<$<CXX_COMPILER_ID:AppleClang,Clang,GNU>:-Wall -Wextra -Wconversion>
     )
@@ -28,6 +28,12 @@ function(enable_warnings target)
     )
 endfunction()
 
-add_executable(Exercise1 expression.h expression.cpp polynomial.h polynomial.cpp logarithm.h logarithm.cpp test.cpp)
+add_executable(Exercise1 polynomial.h polynomial.cpp test.cpp)
+add_executable(Exercise2 exerc2.cpp uppgift_kort.txt out_uppgift_kort.txt uppgift.txt out_uppgift.txt)
+add_executable(Exercise3-given exerc3_given.cpp)
+add_executable(Exercise3 exerc3.cpp)
 
 enable_warnings(Exercise1)
+enable_warnings(Exercise2)
+enable_warnings(Exercise3-given)
+enable_warnings(Exercise3)

@@ -6,17 +6,9 @@
 #include <iostream>
 #include <vector>
 #include <cassert>
-#include "fmt-master/include/fmt/core.h"
 
 #include "polynomial.h"
 #include "logarithm.h"
-
-// Some useful theory
-// * Overloaded operator - Giving special meaning to an operator.
-// For example, the operator + is used to add two numbers,
-// but it can also be used to concatenate two strings.
-
-// * Virtual inheritance - Solving problem of classes that inherit from more than one class.
 
 int main() {
     /*****************************************************
@@ -162,7 +154,9 @@ int main() {
         const Polynomial p2{v2};  // create a polynomial of degree 3
 
         // Test
-        assert(fmt::format("{:.2f}", p2(3.3)) == "218.19");
+        // Rewrite this line to not use std::format
+
+        assert(std::format("{:.2f}", p2(3.3)) == "218.19");
 
     }
 
@@ -273,8 +267,8 @@ int main() {
         // Test
         assert(Expression::get_count_expressions() == 2);
         assert(
-            std::string{p1} ==
-            std::string{"10.90 + 13.20 * X^1 + 6.00 * X^2 + 5.00 * X^3 + 3.10 * X^4 + 6.60 * X^5"});
+                std::string{p1} ==
+                std::string{"10.90 + 13.20 * X^1 + 6.00 * X^2 + 5.00 * X^3 + 3.10 * X^4 + 6.60 * X^5"});
     }
 
     assert(Expression::get_count_expressions() == 0);
@@ -287,8 +281,8 @@ int main() {
      *            operator<<                               *
      *******************************************************/
     std::cout
-        << "\nTEST PHASE 10: Logarithm - constructors, conversion to std::string, set_base, and "
-           "operator<<\n";
+            << "\nTEST PHASE 10: Logarithm - constructors, conversion to std::string, set_base, and "
+               "operator<<\n";
 
     {
         Logarithm l1;  // default constructor

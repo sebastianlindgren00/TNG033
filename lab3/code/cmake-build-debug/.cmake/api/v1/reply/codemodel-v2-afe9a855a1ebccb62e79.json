@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TNG033-Lab-3",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Exercise1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Exercise1-Debug-647280c5428bcaa2d7cd.json",
+					"name" : "Exercise1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Exercise2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Exercise2-Debug-0adb5b9c5fee7a0c6c8b.json",
+					"name" : "Exercise2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Exercise3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Exercise3-Debug-e0a89b2f3fe82539d5cc.json",
+					"name" : "Exercise3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Exercise3-given::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Exercise3-given-Debug-390a8b2fb4de6a4003dd.json",
+					"name" : "Exercise3-given",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug",
+		"source" : "/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

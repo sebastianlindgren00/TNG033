@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="TNG033-Lab-3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exercise1">
+				<Option output="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Exercise1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercise1"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exercise1/fast">
+				<Option output="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Exercise1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercise1/fast"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exercise2">
+				<Option output="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Exercise2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercise2"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exercise2/fast">
+				<Option output="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Exercise2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercise2/fast"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exercise3-given">
+				<Option output="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Exercise3-given" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercise3-given"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exercise3-given/fast">
+				<Option output="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Exercise3-given" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercise3-given/fast"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exercise3">
+				<Option output="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Exercise3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercise3"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exercise3/fast">
+				<Option output="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Exercise3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercise3/fast"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/opt/homebrew/bin/gmake -j8 -f &quot;/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/exerc2.cpp">
+			<Option target="Exercise2"/>
+		</Unit>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/exerc3.cpp">
+			<Option target="Exercise3"/>
+		</Unit>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/exerc3_given.cpp">
+			<Option target="Exercise3-given"/>
+		</Unit>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/out_uppgift.txt">
+			<Option target="Exercise2"/>
+		</Unit>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/out_uppgift_kort.txt">
+			<Option target="Exercise2"/>
+		</Unit>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/polynomial.cpp">
+			<Option target="Exercise1"/>
+		</Unit>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/polynomial.h">
+			<Option target="Exercise1"/>
+		</Unit>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/test.cpp">
+			<Option target="Exercise1"/>
+		</Unit>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/uppgift.txt">
+			<Option target="Exercise2"/>
+		</Unit>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/uppgift_kort.txt">
+			<Option target="Exercise2"/>
+		</Unit>
+		<Unit filename="/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

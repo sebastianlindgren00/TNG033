@@ -21,6 +21,11 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/Users/sebastianlindgren/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeUnixFindMake.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/Users/sebastianlindgren/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{
@@ -495,6 +500,21 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/Users/sebastianlindgren/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindCodeBlocks.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/sebastianlindgren/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/sebastianlindgren/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/ProcessorCount.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/Users/sebastianlindgren/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake"
 		},
 		{
@@ -610,8 +630,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab2/cmake-build-debug",
-		"source" : "/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab2"
+		"build" : "/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code/cmake-build-debug",
+		"source" : "/Users/sebastianlindgren/Documents/Fork_Projects/TNG033/lab3/code"
 	},
 	"version" : 
 	{
